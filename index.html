@@ -3,13 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Frontendtasks</title>
-
-    <style>
-        html, * {
-            font-family: 'Quicksand', sans-serif !important;
-        }
-        </style>
-
 </head>
 <body>
     <div>
@@ -19,20 +12,16 @@
     </div>
 
     <div>
-        <h2> Slack Display Picture:</br>
         <img src = "edu.jpg" alt = "chivin20" data-textid = "slackDisplayImage" style="float:left; padding-left:40px; width:300px; height:350px"/>
-    </h2>
+
     </div>
 
     <div style = "padding-left:450px;">
-        <h2 data-textid = "slackUserName">
-            Slack Name:</br>
-            Chivin20
-        </h2> 
+        <h3 data-textid = "slackUserName"> Chivin20 </h3> 
         
-        <h2> Current Day of the Week: </br> <day data-textid = "CurrentDayOfTheWeek" id = "currentday"></day></h2>
+        <h3 data-textid = "CurrentDayOfTheWeek" id = "currentday"></h3>
 
-        <h2> Current UTC Time: </br> <time data-textid = "currentUTCTime" id = "utc-time" datatime=""></time> </h2>    
+        <h3 data-textid = "currentUTCTime" id = "utc-time"></h3>    
 
     <script>
 
@@ -63,14 +52,12 @@
         //update the time every second
         setInterval(updateUTCTime, 1000);
     </script>
-<h2 data-textid = "myTrack">
-Track:</br>
-Frontend </h2>
 
-<h2>
-GitHub URL:</br>
+<h3 data-textid = "myTrack"> Frontend </h3>
+
+<h3>
 <a href = "https://github.com/Chivin20/frontendtasks.git" data-textid = "githubUrl">githubURL</a>
-</h2>
+</h3>
 
 </div>
     
