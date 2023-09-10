@@ -20,19 +20,19 @@
 
     <div>
         <h2> Slack Display Picture:</br>
-        <img src = "edu.jpg" alt = "chivin20" style="float:left; padding-left:40px; width:300px; height:350px"/>
+        <img src = "edu.jpg" alt = "chivin20" data-textid = "slackDisplayImage" style="float:left; padding-left:40px; width:300px; height:350px"/>
     </h2>
     </div>
 
     <div style = "padding-left:450px;">
-        <h2>
+        <h2 data-textid = "slackUserName">
             Slack Name:</br>
             Chivin20
         </h2> 
         
-        <h2> Current Day of the Week: </br> <day id = "currentday"></day></h2>
+        <h2> Current Day of the Week: </br> <day data-textid = "CurrentDayOfTheWeek" id = "currentday"></day></h2>
 
-        <h2> Current UTC Time: </br> <time id = "utc-time" datatime=""></time> </h2>    
+        <h2> Current UTC Time: </br> <time data-textid = "currentUTCTime" id = "utc-time" datatime=""></time> </h2>    
 
     <script>
 
@@ -63,12 +63,13 @@
         //update the time every second
         setInterval(updateUTCTime, 1000);
     </script>
-<h2>
+<h2 data-textid = "myTrack">
 Track:</br>
-Frontend </br></br>
+Frontend </h2>
 
+<h2>
 GitHub URL:</br>
-<a href = "https://github.com/Chivin20/frontendtasks.git">githubURL</a>
+<a href = "https://github.com/Chivin20/frontendtasks.git" data-textid = "githubUrl">githubURL</a>
 </h2>
 
 </div>
