@@ -11,17 +11,21 @@
         </h1>
     </div>
 
-    <div>
-        <img src = "edu.jpg" alt = "chivin20" data-textid = "slackDisplayImage" style="float:left; padding-left:40px; width:300px; height:350px"/>
+    <div style = "text-align:center;">
+ 
+        <h3 data-testid = "slackUserName"> Chivin20 </h3> 
 
-    </div>
-
-    <div style = "padding-left:450px;">
-        <h3 data-textid = "slackUserName"> Chivin20 </h3> 
+        <img data-testid = "slackDisplayImage" src = "edu.jpg" alt = "chivin20"  style="padding-left:40px; width:200px; height:250px"/>
         
-        <h3 data-textid = "CurrentDayOfTheWeek" id = "currentday"></h3>
+        <h3 data-testid = "CurrentDayOfTheWeek" id = "currentday"></h3>
 
-        <h3 data-textid = "currentUTCTime" id = "utc-time"></h3>    
+        <h3 data-testid = "currentUTCTime" id = "utc-time"></h3>  
+        
+        <h3 data-testid = "myTrack"> Frontend </h3>
+        
+        <a data-testid = "githubURL" href = "https://github.com/Chivin20/frontendtasks.git">githubURL</a>
+   
+    </div>
 
     <script>
 
@@ -41,7 +45,6 @@
         function updateUTCTime () {
             const now = new Date();
             const utcTime = now.toISOString();
-            document.getElementById('utc-time').setAttribute('datetime', utcTime);
             document.getElementById('utc-time').textContent = utcTime;
 
         }
@@ -52,14 +55,6 @@
         //update the time every second
         setInterval(updateUTCTime, 1000);
     </script>
-
-<h3 data-textid = "myTrack"> Frontend </h3>
-
-<h3>
-<a href = "https://github.com/Chivin20/frontendtasks.git" data-textid = "githubUrl">githubURL</a>
-</h3>
-
-</div>
     
 </body>
 </html>
