@@ -15,11 +15,11 @@
  
         <h3 data-testid = "slackUserName"> Chivin20 </h3> 
 
-        <img data-testid = "slackDisplayImage" src = "edu.jpg" alt = "chivin20"  style="padding-left:40px; width:200px; height:250px"/>
+        <img data-testid = "slackDisplayImage" src = "edu.jpg" alt = "chivin20"  style="width:200px; height:250px"/>
         
         <h3 data-testid = "currentDayOfTheWeek" id = "currentday"></h3>
 
-        <h3 data-testid = "currentUTCTime" id = "utc-time"></h3>  
+        <h3 data-testid = "currentUTCTime" id = "utcTimeMillis"></h3>  
         
         <h3 data-testid = "myTrack"> Frontend </h3>
         
@@ -41,19 +41,14 @@
         displayCurrentDay();
 
 
-        //function to update utctime
-        function updateUTCTime () {
-            const now = new Date();
-            const utcTime = now.toISOString();
-            document.getElementById('utc-time').textContent = utcTime;
+        //function to display utctime
+        
+            const utcTimeMillisElement = document.getElementById('utcTimeMillis');
+            const currentUtcTimeMillis = Date.now();
 
-        }
 
-        //call the function to update the time
-        updateUTCTime();
+            utcTimeMillisElement.textContent = currentUtcTimeMillis;
 
-        //update the time every second
-        setInterval(updateUTCTime, 1000);
     </script>
     
 </body>
